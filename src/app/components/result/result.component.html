@@ -1,0 +1,7 @@
+<img [src]="imageUrl" alt="">
+<div>
+    <h2>{{name}}</h2>
+    <a [href]="url">{{url}}</a>
+    <p>Score: {{score}}</p>
+    <button class="see-button" (click)="buttonClicked.emit(apiUrl)">VER MAIS</button>
+</div>

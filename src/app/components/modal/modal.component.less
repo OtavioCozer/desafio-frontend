@@ -1,0 +1,105 @@
+:host {
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    width: 100vw;
+    height: 100vh;
+    z-index: 10;
+    background: rgba(47, 37, 68, 0.2);
+    backdrop-filter: blur(4px);
+    display: flex;
+    justify-content: center;
+}
+
+.content {
+    display: flex;
+    gap: 20px;
+}
+
+hr {
+    height: 1px;
+    background: black;
+}
+
+img {
+    width: 266px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.my-modal {
+    margin: auto auto;
+    padding: 40px;
+    z-index: 11;
+    max-width: 980px;
+    max-height: 371px;
+    width: 80%;
+    background-color: white;
+
+    box-shadow: 0px 0px 6px rgba(47, 37, 68, 0.25);
+    border-radius: 10px;
+}
+
+.user-info {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.info-group {
+    display: flex;
+    justify-content: space-between;
+}
+
+.info-group-left {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.info-group-right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.field {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+
+    color: #2F2544;
+}
+
+.value {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+
+    color: #7B6490;
+}
+
+button {
+    border: 1px solid #8C56C2;
+    box-sizing: border-box;
+    border-radius: 4px;
+
+    align-self: flex-end;
+
+    width: 87px;
+    height: 26px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #8C56C2;
+}

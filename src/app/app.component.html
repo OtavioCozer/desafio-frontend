@@ -1,0 +1,24 @@
+<div class="main">
+
+  <div class="header">
+    <img src="assets/logo.svg" alt="Logo">
+    <div>
+      <form (ngSubmit)="onSubmit()" #searchForm="ngForm">
+        <input type="text" id="search" required [(ngModel)]="search" name="search" class="search-input"
+          placeholder="Pesquisar" />
+        <button [disabled]="!searchForm.form.valid" type="submit" class="search-button">
+          <i class="zmdi zmdi-search"></i>
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <div class="content">
+    <router-outlet></router-outlet>
+  </div>
+
+  <div class="footer">
+    <p>Projetado por Otavio Ferreira Cozer - 04/10/2021</p>
+  </div>
+
+</div>

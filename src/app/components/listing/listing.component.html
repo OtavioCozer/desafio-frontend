@@ -1,0 +1,13 @@
+<div class="back">
+
+    <div class="list-container">
+        <h2>Resultados para: {{search}}</h2>
+        <div class="list">
+            <app-result class="list-item" *ngFor="let item of items" [id]=item.id (buttonClicked)="apiUrl=$event">
+            </app-result>
+        </div>
+    </div>
+
+    <app-modal *ngIf="apiUrl !== ''" [apiUrl]="apiUrl" (modalClose)="apiUrl=''"></app-modal>
+
+</div>
